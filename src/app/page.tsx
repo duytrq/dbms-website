@@ -27,12 +27,20 @@ export default async function Dashboard() {
             <h1 className="text-3xl font-bold text-gray-900">ClassicModels Dashboard</h1>
             <p className="text-gray-500 mt-2">Overview of sales, orders, and customer statistics</p>
           </div>
-          <a
-            href="/products"
-            className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors"
-          >
-            Manage Products
-          </a>
+          <div className="flex space-x-4">
+            <a
+              href="/pivot"
+              className="bg-white text-blue-600 border border-blue-600 px-4 py-2 rounded-md hover:bg-blue-50 transition-colors"
+            >
+              Pivot Table
+            </a>
+            <a
+              href="/products"
+              className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors"
+            >
+              Manage Products
+            </a>
+          </div>
         </header>
 
         {/* Top Stats Cards */}
